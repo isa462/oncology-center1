@@ -1,0 +1,228 @@
+// .countdown {
+//   background-color: #2348A3; 
+//   color: #ffffff;
+//   text-align: center;
+//   max-width: 1440px;
+//   margin: 0px auto;
+//   font-family: var(--font-dudka);
+//   padding: 10px 0px ;
+//   gap: 44px;
+//   .title {
+//     font-size: 32px;
+//     font-weight: 700;
+//     padding-bottom: 29px;
+//   }
+
+//   .timer {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 150px;
+//     padding-bottom: 10px;
+//   }
+
+//   .block {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+
+//     .value {
+//       font-size: 48px;
+//       font-weight: 700;
+//       line-height: 1;
+//     }
+
+//     .label {
+//       margin-top: 6px;
+//       font-weight: 400;
+//       font-size: 24px;
+//       text-transform: lowercase;
+//       opacity: 0.9;
+//       color: #AAAAAA;
+//     }
+//   }
+
+//   .separator {
+//     width: 1px;
+//     height: 75.5px;
+//     background-color: white;
+//     border: 1px;
+//   }
+// }
+.countdown {
+  background-color: #2348a3;
+  color: #ffffff;
+  text-align: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: var(--font-dudka);
+  padding: 10px 0;
+  gap: 44px;
+
+  .title {
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 29px;
+  }
+
+  .timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    padding-bottom: 10px;
+  }
+
+  .block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .value {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .label {
+      margin-top: 6px;
+      font-weight: 400;
+      font-size: 24px;
+      text-transform: lowercase;
+      opacity: 0.9;
+      color: #aaaaaa;
+    }
+  }
+
+  .separator {
+    width: 1px;
+    height: 75.5px;
+    background-color: white;
+    border: 1px;
+  }
+}
+
+/* 🌐 Адаптив */
+
+/* --- 800px --- */
+@media (max-width: 800px) {
+  .countdown .title {
+    font-size: 28px;
+  }
+  .countdown .timer {
+    gap: 100px;
+  }
+}
+
+/* --- 700px --- */
+@media (max-width: 700px) {
+  .countdown .title {
+    font-size: 26px;
+  }
+  .countdown .timer {
+    gap: 80px;
+  }
+  .countdown .block .value {
+    font-size: 42px;
+  }
+  .countdown .block .label {
+    font-size: 20px;
+  }
+}
+
+/* --- 600px --- */
+@media (max-width: 600px) {
+  .countdown .title {
+    font-size: 24px;
+  }
+  .countdown .timer {
+    gap: 60px;
+  }
+}
+
+/* --- 500px --- */
+@media (max-width: 500px) {
+  .countdown {
+    padding: 15px 0;
+  }
+
+  .countdown .title {
+    font-size: 22px;
+  }
+
+  .countdown .timer {
+    gap: 40px;
+  }
+
+  .countdown .block .value {
+    font-size: 36px;
+  }
+
+  .countdown .block .label {
+    font-size: 18px;
+  }
+
+  .countdown .separator {
+    height: 60px;
+  }
+}
+
+/* --- 480px --- */
+@media (max-width: 480px) {
+  .countdown .timer {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .countdown .separator {
+    display: none;
+  }
+
+  .countdown .block .value {
+    font-size: 32px;
+  }
+
+  .countdown .block .label {
+    font-size: 16px;
+  }
+
+  .countdown .title {
+    font-size: 20px;
+    padding-bottom: 18px;
+  }
+}
+
+/* --- 440px --- */
+@media (max-width: 440px) {
+  .countdown .block .value {
+    font-size: 28px;
+  }
+
+  .countdown .block .label {
+    font-size: 15px;
+  }
+
+  .countdown .title {
+    font-size: 18px;
+  }
+}
+
+/* --- 300px --- */
+@media (max-width: 300px) {
+  .countdown {
+    padding: 12px 0;
+  }
+
+  .countdown .title {
+    font-size: 16px;
+  }
+
+  .countdown .block .value {
+    font-size: 24px;
+  }
+
+  .countdown .block .label {
+    font-size: 14px;
+  }
+}
+

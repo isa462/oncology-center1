@@ -1,0 +1,401 @@
+.section{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 1;
+    position: relative;
+    margin-top: -85px;
+    .sectionHeroContainer{
+      position: relative;
+       align-items: center;
+       justify-content: center;
+       display: flex;
+       .vodeo{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        filter: brightness(0.5); 
+        height: 100vh;
+        overflow: hidden;
+        object-fit: cover;
+        width: 1440px;
+        height: 714px;
+        }
+        .nameDescription{
+          font-family: var(--font-dudka);
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; 
+          align-items: center; 
+          gap: -10px;
+          .h1{
+            color: #E950A0;
+            font-weight: 700;
+            font-size: 48px;
+            margin-top: 10px;
+          }
+          .h2{
+            color: white;
+            font-weight: 700;
+            font-size: 48px;
+            margin-top: -30px;
+          }
+          .p1{
+            color: white;
+            margin-top: -20px;
+          }
+          .dataBishkek{
+            display: flex;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            .h3p2{
+              flex-direction: column;
+              .h3{
+                 margin-top: 0px;
+                 font-weight: 700;
+                 font-size: 48px;
+              }
+              .p2{
+                margin-top: -35px;
+                margin-left: 15px;
+              }
+            }
+            .p3{
+              margin-left: 20px;
+            }
+          }
+          .registerBtn{
+            width: 304px;
+            height: 65px;
+            border-radius: 10px;
+            font-weight: 400;
+            font-size: 24px;
+            color: white;
+            background-color: #2348A3;
+            font-family: var(--font-dudka);
+            border: none;
+          }
+        }
+      .Gynecology {
+        bottom: 10px;
+        right: 10px;
+    position: absolute;
+    z-index: 5;
+    padding-top: 91px;
+    padding-left: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     .boxWrapper {
+      position: relative;
+      width: 271px;
+      border: 1px solid #2348A3;
+      border-radius: 30px;
+      background: #fff;
+      overflow: hidden;
+      transition: box-shadow 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+      &.open {
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    .gyneButton {
+      width: 100%;
+      height: 61px;
+      background: #fff;
+      color: #2348A3;
+      font-family: Dudka;
+      font-weight: 700;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .boxWrapper.open .innerBox {
+      max-height: 200px; 
+      opacity: 1;
+      padding: 15px 10px;
+    }
+    .innerBox {
+      width: 100%;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.6s ease, opacity 0.6s ease, padding 0.3s ease;
+          .box {
+      margin-bottom: 8px;
+      span {
+font-family: Dudka;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+line-height: 100%;
+color: black; 
+.label{
+  color:#2348A3;
+}
+}
+    }
+    .btn_2{
+      padding-top: 10px;
+      display: flex;
+      justify-content: center;
+    button{
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-family: Dudka;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 100%;
+    background: #2348A3;
+    color: white;
+   }
+    }
+    }
+      }
+  }
+}
+@media (max-width: 800px) {
+  .section {
+    .sectionHeroContainer {
+      .vodeo {
+        height: 700px;
+        width: 800px;
+      }
+      .nameDescription {
+        .h1, .h2 {
+          font-size: 40px;
+          text-align: center;
+        }
+        .registerBtn {
+          width: 260px;
+          height: 60px;
+          font-size: 22px;
+        }
+      }
+      .Gynecology {
+        padding-left: 65%;
+        .gyneButton {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .section {
+    .sectionHeroContainer {
+      flex-direction: column;
+      .vodeo {
+        height: 600px;
+        width: 700px;
+      }
+      .nameDescription {
+        gap: 5px;
+        .h1, .h2 {
+          font-size: 34px;
+        }
+        .p1 {
+          font-size: 18px;
+        }
+        .dataBishkek {
+          flex-direction: column;
+          .h3 {
+            font-size: 40px;
+          }
+          .p2 {
+            font-size: 16px;
+          }
+          .p3 {
+            font-size: 16px;
+            margin-left: 0;
+          }
+        }
+      }
+      .Gynecology {
+        padding-left: 60%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    .sectionHeroContainer {
+      .vodeo {
+        height: 500px;
+        width: 600px;
+      }
+      .nameDescription {
+        .h1, .h2 {
+          font-size: 30px;
+        }
+        .p1 {
+          font-size: 16px;
+        }
+        .registerBtn {
+          width: 230px;
+          height: 55px;
+          font-size: 20px;
+        }
+      }
+      .Gynecology {
+        padding-left: 50%;
+        .boxWrapper {
+          width: 240px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .section {
+    .sectionHeroContainer {
+      .vodeo {
+        height: 480px;
+        width: 500px;
+      }
+      .nameDescription {
+        padding: 0 10px;
+        .h1, .h2 {
+          font-size: 26px;
+          text-align: center;
+        }
+        .p1 {
+          font-size: 15px;
+        }
+        .registerBtn {
+          width: 200px;
+          height: 50px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    .sectionHeroContainer {
+      .vodeo {
+      width: 480px !important;     
+    }
+      .nameDescription {
+        .h1, .h2 {
+          font-size: 24px !important;
+        }
+        .p1 {
+          font-size: 14px;
+        }
+        .dataBishkek {
+          .h3 {
+            font-size: 34px;
+          }
+          .p2, .p3 {
+            font-size: 14px;
+          }
+        }
+        .registerBtn {
+          width: 180px;
+          height: 45px;
+          font-size: 16px;
+        }
+      }
+       .Gynecology {
+        padding-left: 50%;
+        .boxWrapper {
+          width: 150px;
+         .gyneButton {
+            font-size: 12px;
+          }
+          .innerBox {
+            .box span {
+              font-size: 10px;
+            }
+            .btn_2 button {
+              width: 110px;
+              height: 30px;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .section {
+    .sectionHeroContainer {
+       .vodeo {
+        width: 440px !important;     
+       }
+      .nameDescription {
+        .h1, .h2 {
+          font-size: 22px;
+        }
+        .p1 {
+          font-size: 13px;
+        }
+      }
+      .Gynecology {
+        .boxWrapper {
+          width: 150px;
+          .gyneButton {
+            font-size: 12px;
+          }
+          .innerBox {
+            .box span {
+              font-size: 10px;
+            }
+            .btn_2 button {
+              width: 110px;
+              height: 30px;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 300px) {
+  .section {
+    .sectionHeroContainer {
+      .vodeo {
+        height: 550px;
+        width: 300px !important;
+      }
+      .nameDescription {
+        .h1, .h2 {
+          font-size: 18px;
+        }
+        .p1 {
+          font-size: 12px;
+        }
+        .registerBtn {
+          width: 160px;
+          height: 40px;
+          font-size: 14px;
+        }
+      }
+      .Gynecology {
+        .boxWrapper {
+          width: 140px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.4);
+  display:flex; justify-content:center; align-items:center; z-index:1000;
+}
+.modal {
+  width:420px; background:#fff; border-radius:14px; padding:30px 20px; position:relative;
+  display:flex; flex-direction:column; gap:20px; box-shadow:0 8px 24px rgba(0,0,0,0.15);
+}
+.close { position:absolute; right:16px; top:14px; font-size:24px; background:none; border:none; cursor:pointer; }
+.buttons { display:flex; flex-direction:column; gap:14px; }
+.buttons button { padding:14px; border-radius:10px; border:none; cursor:pointer; background:#006CFF; color:#fff; }

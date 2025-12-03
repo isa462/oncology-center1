@@ -1,0 +1,71 @@
+.sponsors {
+  background: #2348A3;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  color: #ff6ec7;
+  font-family: var(--font-dudka);
+  max-width: 1440px;
+ 
+  .title {
+    font-weight: 700;
+    font-size: 48px;
+    margin-top: -5px;
+  }
+
+  .sliderWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .swiper {
+    width: 80%;
+  }
+
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: #fff;
+      object-fit: contain;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .navBtn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #ff6ec7;
+    color: #ff6ec7;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #ff6ec7;
+      color: #1f3fae;
+    }
+  }
+}
+@media (max-width: 800px) {
+    .swiper {
+      width: 100%;
+      .img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+}

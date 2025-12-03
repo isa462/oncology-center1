@@ -1,0 +1,5 @@
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,0.45);display:flex;justify-content:center;align-items:center;z-index:1000}
+.modal{width:420px;background:#fff;border-radius:14px;padding:26px;position:relative;display:flex;flex-direction:column;gap:10px}
+.close{position:absolute;right:14px;top:10px;font-size:22px;background:none;border:none;cursor:pointer}
+.error{color:#d63447;font-size:13px}
+.submit{margin-top:6px;padding:12px;border-radius:8px;background:#006CFF;color:#fff;border:none;cursor:pointer}

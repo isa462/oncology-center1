@@ -1,0 +1,338 @@
+// .section{
+//    display: flex;
+//     align-items: center;
+//     justify-content: center;
+// .sectionOpport{
+//     margin-top: -50px; 
+//     width: 1440px;
+//     height: 802px;
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     overflow: hidden;
+//     font-family: var(--font-dudka);
+//     .oppo1{
+//         position: absolute;
+//         inset: 0;
+//         background-image: url('/images/originalphoto.png');
+//         background-size: cover;
+//         background-position: center;
+//         filter: blur(10px); 
+//         transform: scale(1.1);
+//         z-index: 1;
+//     }
+//     .Opport{
+//             position: relative;
+//             z-index: 3;
+//             text-align: center;
+
+//         .pink{
+//             color: #E950A0;
+//             font-weight: 700;
+//             font-size: 48px;
+//             margin: 25px;
+//         }
+//         .span1{
+//             font-weight: 700;
+//             font-size: 48px;
+//         }
+//         .composition11{
+//             max-width: 1320px;
+//             max-height: 662px;
+//             margin-top: 70px;
+//         }
+//          .text {
+//     padding-top: 150px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin: 0 auto;
+//     width: 1316px;
+    
+//     .p111 {
+//       font-size: 40px;
+//       font-weight: 700;
+//       color: white;
+      
+//     }
+//     p {
+//          margin: 0;
+//     }
+//     h4 {
+//       padding-left: 100px;
+//       font-size: 34px;
+//       font-weight: 400;
+//       color: white;
+//       position: relative;
+//       display: inline-block;
+//       transition: transform 0.5s ease, opacity 0.5s ease;
+//     }
+
+//     .show {
+//       opacity: 1;
+//       transform: translateY(0);
+//     }
+
+//     .hide {
+//       opacity: 0;
+//       transform: translateY(-50px);
+//     }
+//   }
+
+//     }
+// }
+// }
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .sectionOpport {
+    margin-top: -50px;
+    width: 1440px;
+    height: 802px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: var(--font-dudka);
+
+    .oppo1 {
+      position: absolute;
+      inset: 0;
+      background-image: url('/images/originalphoto.png');
+      background-size: cover;
+      background-position: center;
+      filter: blur(10px);
+      transform: scale(1.1);
+      z-index: 1;
+    }
+
+    .Opport {
+      position: relative;
+      z-index: 3;
+      text-align: center;
+      color: white;
+
+      .pink {
+        color: #E950A0;
+        font-weight: 700;
+        font-size: 48px;
+        margin: 25px;
+      }
+
+      .span1 {
+        font-weight: 700;
+        font-size: 48px;
+      }
+
+      .text {
+        padding-top: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 1316px;
+
+        .p111 {
+          font-size: 40px;
+          font-weight: 700;
+          color: white;
+        }
+
+        p {
+          margin: 0;
+        }
+
+        h4 {
+          padding-left: 100px;
+          font-size: 34px;
+          font-weight: 400;
+          color: white;
+          position: relative;
+          display: inline-block;
+          transition: transform 0.5s ease, opacity 0.5s ease;
+        }
+
+        .show {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        .hide {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+      }
+    }
+  }
+
+  /* ========= АДАПТИВКА ========= */
+
+  @media (max-width: 1200px) {
+    .sectionOpport {
+      width: 100%;
+      height: 700px;
+
+      .Opport {
+        .pink,
+        .span1 {
+          font-size: 42px;
+        }
+
+        .text {
+          width: 90%;
+          padding-top: 100px;
+
+          .p111 {
+            font-size: 34px;
+          }
+
+          h4 {
+            font-size: 28px;
+            padding-left: 60px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    .sectionOpport {
+      height: 600px;
+
+      .Opport {
+        .pink,
+        .span1 {
+          font-size: 36px;
+        }
+
+        .text {
+          padding-top: 80px;
+          flex-direction: column;
+          width: 80%;
+          text-align: center;
+
+          .p111 {
+            font-size: 28px;
+          }
+
+          h4 {
+            padding-left: 0;
+            font-size: 24px;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    .sectionOpport {
+      height: 520px;
+
+      .Opport {
+        .pink,
+        .span1 {
+          font-size: 30px;
+        }
+
+        .text {
+          padding-top: 60px;
+          width: 90%;
+
+          .p111 {
+            font-size: 24px;
+          }
+
+          h4 {
+            font-size: 20px;
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .sectionOpport {
+      height: 460px;
+
+      .Opport {
+        .pink,
+        .span1 {
+          font-size: 26px;
+        }
+
+        .text {
+          padding-top: 40px;
+          width: 95%;
+          flex-direction: column;
+
+          .p111 {
+            font-size: 18px;
+          }
+
+          h4 {
+            font-size: 16px;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 380px) {
+    .sectionOpport {
+      height: 420px;
+
+      .Opport {
+        .pink,
+        .span1 {
+          font-size: 22px;
+        }
+
+        .text {
+          padding-top: 30px;
+
+          .p111 {
+            font-size: 16px;
+          }
+
+          h4 {
+            font-size: 14px;
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 300px) {
+    .sectionOpport {
+      height: 400px;
+
+      .Opport {
+        .pink,
+        .span1 {
+          font-size: 18px;
+        }
+
+        .text {
+          padding-top: 20px;
+
+          .p111 {
+            font-size: 14px;
+          }
+
+          h4 {
+            font-size: 12px;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}

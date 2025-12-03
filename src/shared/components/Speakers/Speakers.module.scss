@@ -1,0 +1,39 @@
+.container{
+    width: 1440px;
+    margin: 0 auto;
+    font-family: var(--font-dudka);
+    .title{
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        color: #000000;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        .blue{
+            color: #007BFF;
+        }
+    }
+    .fio{
+        font-weight: 700;
+        font-size: 20px;
+        .star{
+            color: red;
+        }
+    }
+    .search{
+        width: 270px;
+        height: 33px;
+        border-radius: 10px;
+        border: 1px solid #666666;
+        gap: 10px;
+        padding: 10px;
+        drop-shadow:  10px 0px #4081ff 25%;
+        margin-bottom: 40px;
+    }
+    .noResults{
+        font-weight: 700;
+        font-size: 12px;
+        color: #980000;
+        // margin-top: -35px;
+    }
+}

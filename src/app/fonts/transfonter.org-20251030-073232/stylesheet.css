@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'NCL Monster Beast Demo';
+    src: url('NCLMonsterBeast-Demo.woff2') format('woff2'),
+        url('NCLMonsterBeast-Demo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

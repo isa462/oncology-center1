@@ -1,0 +1,45 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal {
+  background: #fff;
+  padding: 24px;
+  border-radius: 14px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 8px;
+    color: black;
+  }
+
+  input {
+    padding: 10px 12px;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+  }
+
+  button {
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
